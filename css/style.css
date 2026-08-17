@@ -329,6 +329,88 @@ span {
   margin: 2rem 0 3rem;
 }
 
+.experience {
+  min-height: auto;
+  padding-bottom: 10rem;
+}
+
+.experience h2 {
+  margin-bottom: 5rem;
+}
+
+.experience .experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.experience-container .experience-box {
+  background: var(--bg-color);
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0.5rem 1.6rem var(--shadow-color);
+  border-left: 0.5rem solid var(--main-color);
+  transition: 0.5s ease;
+}
+
+.experience-container .experience-box:hover {
+  box-shadow: 0 0.5rem 2rem var(--shadow-color);
+  transform: translateY(-0.5rem);
+}
+
+.experience-box .experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.experience-box .experience-title {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.experience-box .experience-title i {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+
+.experience-box .experience-title h3 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.experience-box .experience-title h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--main-color);
+}
+
+.experience-box .experience-date {
+  font-size: 1.5rem;
+  color: var(--main-color);
+  font-weight: 500;
+  padding: 0.5rem 1.5rem;
+  background: rgba(71, 39, 19, 0.1);
+  border-radius: 2rem;
+  white-space: nowrap;
+}
+
+.dark-mode .experience-box .experience-date {
+  background: rgba(118, 68, 36, 0.2);
+}
+
+.experience-box p {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
 .services {
   min-height: auto;
   padding-bottom: 10rem;
@@ -877,6 +959,21 @@ span {
   .about-img img {
     width: 70vw;
     margin-top: -2rem;
+  }
+
+  .experience-box .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-box .experience-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .experience-box .experience-date {
+    align-self: flex-start;
   }
 
   .testimonial-container .testimonial-wrapper {
